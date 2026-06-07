@@ -1,0 +1,186 @@
+.leaderboard-container{
+  padding:30px;
+}
+
+/* HEADER */
+
+.leaderboard-header{
+  text-align:center;
+  margin-bottom:35px;
+}
+
+.leaderboard-header h1{
+  font-size:42px;
+  font-weight:800;
+  color:#0f172a;
+}
+
+.leaderboard-header p{
+  color:#64748b;
+  margin-top:8px;
+  font-size:16px;
+}
+
+/* TOP 3 */
+
+.leaderboard-top{
+  display:grid;
+  grid-template-columns:
+  repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+  margin-bottom:40px;
+}
+
+.leader-card{
+  background:white;
+  padding:30px;
+  border-radius:24px;
+  text-align:center;
+  box-shadow:
+    0 10px 25px rgba(0,0,0,.08);
+
+  transition:.3s;
+}
+
+.leader-card:hover{
+  transform:translateY(-6px);
+}
+
+.leader-card h1{
+  font-size:50px;
+  margin-bottom:10px;
+}
+
+.leader-card h2{
+  color:#0f172a;
+  margin-bottom:10px;
+}
+
+.leader-card p{
+  color:#64748b;
+  font-size:17px;
+}
+
+.gold{
+  border-top:6px solid #f59e0b;
+}
+
+.silver{
+  border-top:6px solid #94a3b8;
+}
+
+.bronze{
+  border-top:6px solid #b45309;
+}
+
+/* RANK LIST */
+
+.rank-list{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.rank-item{
+  background:white;
+  padding:22px 28px;
+  border-radius:18px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  box-shadow:
+    0 5px 20px rgba(0,0,0,.06);
+
+  transition:.3s;
+}
+
+.rank-item:hover{
+  transform:translateX(6px);
+}
+
+.rank-item h3{
+  color:#0f172a;
+}
+
+.rank-item p{
+  color:#64748b;
+  margin-top:4px;
+}
+
+.rank-score{
+  background:
+    linear-gradient(
+      135deg,
+      #3b82f6,
+      #8b5cf6
+    );
+
+  color:white;
+  padding:12px 20px;
+  border-radius:12px;
+  font-size:20px;
+  font-weight:700;
+}
+
+.empty-board{
+  background:white;
+  padding:50px;
+  border-radius:24px;
+  text-align:center;
+  box-shadow:
+    0 5px 20px rgba(0,0,0,.08);
+}
+
+.empty-board h2{
+  color:#0f172a;
+}
+
+.empty-board p{
+  color:#64748b;
+  margin-top:10px;
+}
+
+/* DARK MODE */
+
+.dark .leaderboard-container{
+  background:#020617;
+}
+
+.dark .leaderboard-header h1{
+  color:white;
+}
+
+.dark .leaderboard-header p{
+  color:#cbd5e1;
+}
+
+.dark .leader-card{
+  background:#0f172a;
+  border:1px solid #334155;
+}
+
+.dark .leader-card h2,
+.dark .leader-card p{
+  color:white;
+}
+
+.dark .rank-item{
+  background:#0f172a;
+  border:1px solid #334155;
+}
+
+.dark .rank-item h3,
+.dark .rank-item p{
+  color:white;
+}
+
+.dark .empty-board{
+  background:#0f172a;
+  border:1px solid #334155;
+}
+
+.dark .empty-board h2,
+.dark .empty-board p{
+  color:white;
+}

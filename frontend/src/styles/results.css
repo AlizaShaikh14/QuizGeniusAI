@@ -1,0 +1,146 @@
+.result-stats{
+  display:grid;
+  grid-template-columns:
+  repeat(auto-fit,minmax(240px,1fr));
+
+  gap:24px;
+  margin-bottom:35px;
+}
+
+/* STATS CARDS */
+
+.result-stat-card{
+  background:white;
+  padding:28px;
+  border-radius:24px;
+  text-align:center;
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,.08);
+
+  transition:.3s;
+}
+
+.result-stat-card:hover{
+  transform:translateY(-5px);
+}
+
+.result-stat-card h3{
+  color:#64748b;
+  margin-bottom:10px;
+}
+
+.result-stat-card h1{
+  color:#2563eb;
+  font-size:38px;
+}
+
+/* RESULT GRID */
+
+.result-grid{
+  display:grid;
+  grid-template-columns:
+  repeat(auto-fit,minmax(320px,1fr));
+
+  gap:25px;
+}
+
+/* RESULT CARD */
+
+.result-card{
+  background:white;
+  padding:28px;
+  border-radius:24px;
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,.08);
+
+  transition:.3s;
+}
+
+.result-card:hover{
+  transform:translateY(-5px);
+}
+
+.result-card h2{
+  color:#0f172a;
+  margin-bottom:15px;
+}
+
+.result-card h1{
+  color:#2563eb;
+  margin-bottom:15px;
+  font-size:42px;
+}
+
+/* PROGRESS */
+
+.progress{
+  height:14px;
+  background:#e5e7eb;
+  border-radius:20px;
+  overflow:hidden;
+  margin:18px 0;
+}
+
+.progress-fill{
+  height:100%;
+
+  background:
+    linear-gradient(
+      90deg,
+      #3b82f6,
+      #8b5cf6
+    );
+
+  border-radius:20px;
+}
+
+.result-card p{
+  margin-top:12px;
+  color:#64748b;
+  font-size:15px;
+}
+
+/* PERFORMANCE BADGES */
+
+.result-card p:last-child{
+  font-weight:700;
+  font-size:16px;
+}
+
+/* DARK MODE */
+
+.dark .result-stat-card{
+  background:#0f172a;
+  border:1px solid #334155;
+}
+
+.dark .result-stat-card h3{
+  color:#cbd5e1;
+}
+
+.dark .result-stat-card h1{
+  color:#60a5fa;
+}
+
+.dark .result-card{
+  background:#0f172a;
+  border:1px solid #334155;
+}
+
+.dark .result-card h1{
+  color:#60a5fa;
+}
+
+.dark .result-card h2{
+  color:white;
+}
+
+.dark .result-card p{
+  color:#cbd5e1;
+}
+
+.dark .progress{
+  background:#334155;
+}

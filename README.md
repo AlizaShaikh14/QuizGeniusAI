@@ -66,8 +66,7 @@ QuizGeniusAI
 ├── backend
 │
 ├── README.md
-│
-└── .gitignore
+
 ```
 
 ---
